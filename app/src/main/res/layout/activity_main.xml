@@ -95,5 +95,6 @@
         android:layout_height="wrap_content"
         android:text="Zatwierdź"
         android:onClick="button_submitClick"/>
+
 </LinearLayout>
 
