@@ -8,15 +8,18 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
 
+
     >
 
     <TextView
         android:id="@+id/wybierz_model"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#11D919"
         android:text="Wybierz model samochodu:"
-        android:textSize="18sp"
-        android:layout_marginBottom="10dp"/>
+        android:textSize="18sp" />
+
     <RadioGroup
         android:id="@+id/model"
         android:layout_width="wrap_content"
