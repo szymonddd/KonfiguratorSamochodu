@@ -63,7 +63,32 @@
         android:layout_height="wrap_content"
         android:text="Skórzane siedzenia"
         android:layout_marginBottom="20dp"/>
+    <ImageView
+        android:id="@+id/imageViewSedan"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/siedzenie"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:src="@drawable/sedan"/>
 
+    <ImageView
+        android:id="@+id/imageViewSUV"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/siedzenie"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:src="@drawable/suv"/>
+
+    <ImageView
+        android:id="@+id/imageViewHatchback"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/siedzenie"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:src="@drawable/hatchback"/>
     <Button
         android:id="@+id/button_submit"
         android:layout_width="wrap_content"
