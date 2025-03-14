@@ -43,8 +43,25 @@
 
     </RadioGroup>
 
-    <CheckBox
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Wybierz dodatkowe opcje:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <CheckBox
+        android:id="@+id/klima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klimatyzacja"
+        android:layout_marginBottom="10dp"/>
+
+    <CheckBox
+        android:id="@+id/siedzenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skórzane siedzenia"
+        android:layout_marginBottom="20dp"/>
 </LinearLayout>
 
