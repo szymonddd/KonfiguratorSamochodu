@@ -36,32 +36,37 @@ class MainActivity : AppCompatActivity() {
         autosedan.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 zdj.setImageResource(R.drawable.sedan)
+                zdj.visibility = View.VISIBLE
             }
         }
 
         autosuv.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 zdj.setImageResource(R.drawable.suv)
+                zdj.visibility = View.VISIBLE
             }
         }
 
         autohatchback.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 zdj.setImageResource(R.drawable.hatchback)
+                zdj.visibility = View.VISIBLE
             }
         }
 
         przycisk.setOnClickListener {
             if (klimatyzacja.isChecked && skorzanesiedzenia.isChecked) {
+                wynik.setBackgroundColor(Color.GREEN)
                 if (autosedan.isChecked) {
                     wynik.setText("Twoja konfiguracja: Sedan +klimatyzacja +skórzane siedzenia")
-                    wynik.setBackgroundColor(Color.RED)
+                    wynik.setBackgroundColor(Color.GREEN)
                 } else if (autosuv.isChecked) {
                     wynik.setText("Twoja konfiguracja: SUV +klimatyzacja +skórzane siedzenia")
-                    wynik.setBackgroundColor(Color.RED)
+                    wynik.setBackgroundColor(Color.GREEN)
                 } else if (autohatchback.isChecked) {
                     wynik.setText("Twoja konfiguracja: Hatchback +klimatyzacja +skórzane siedzenia")
-                    wynik.setBackgroundColor(Color.RED)
+                    wynik.setBackgroundColor(Color.GREEN)
+
                 }
             }
             if (klimatyzacja.isChecked && !skorzanesiedzenia.isChecked)
