@@ -7,43 +7,57 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-
-
-    >
+    android:padding="16dp"
+    android:background="#F0F0F0">
 
     <TextView
         android:id="@+id/wybierz_model"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="16dp"
         android:background="#11D919"
         android:text="Wybierz model samochodu:"
-        android:textSize="18sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:gravity="center"/>
 
     <RadioGroup
         android:id="@+id/model"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
 
         <RadioButton
             android:id="@+id/sedan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sedan" />
+            android:text="Sedan"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:background="#e0e0e0"/>
 
         <RadioButton
             android:id="@+id/suv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SUV" />
+            android:text="SUV"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:background="#e0e0e0"/>
 
         <RadioButton
             android:id="@+id/hatchback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hatchback" />
-
+            android:text="Hatchback"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:background="#e0e0e0"/>
     </RadioGroup>
 
     <TextView
@@ -51,53 +65,57 @@
         android:layout_height="wrap_content"
         android:text="Wybierz dodatkowe opcje:"
         android:textSize="18sp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="16dp"
+        android:background="#11D919"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:gravity="center"/>
 
     <CheckBox
         android:id="@+id/klima"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Klimatyzacja"
-        android:layout_marginBottom="10dp"/>
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:background="#e0e0e0"/>
 
     <CheckBox
         android:id="@+id/siedzenie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Skórzane siedzenia"
-        android:layout_marginBottom="20dp"/>
-    <ImageView
-        android:id="@+id/imageViewSedan"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_below="@id/siedzenie"
-        android:layout_marginTop="30dp"
-        android:visibility="gone"
-        android:src="@drawable/sedan"/>
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp"
+        android:background="#e0e0e0"/>
 
     <ImageView
-        android:id="@+id/imageViewSUV"
+        android:id="@+id/imageViewzdj"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:layout_below="@id/siedzenie"
-        android:layout_marginTop="30dp"
         android:visibility="gone"
-        android:src="@drawable/suv"/>
+        android:src="@drawable/sedan"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
 
-    <ImageView
-        android:id="@+id/imageViewHatchback"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_below="@id/siedzenie"
-        android:layout_marginTop="30dp"
-        android:visibility="gone"
-        android:src="@drawable/hatchback"/>
+
     <Button
         android:id="@+id/button_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zatwierdź"
-        android:onClick="button_submitClick"/>
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:background="#11D919"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
 
+/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPodsumowanie"/>
 </LinearLayout>
-
